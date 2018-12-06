@@ -10,7 +10,7 @@ operating system on your Raspberry Pi.
 <b>
 NOTE: Following these instructions will clobber your existing startup script
 (/etc/rc.local) and DHCP configuration (/etc/udhcpd.conf, /etc/dhcpcd.conf).  
-Proceed with caution!
+Proceed with caution! First of all change the IP address in the rc.local file
 </b>
 
 <p>
@@ -18,8 +18,9 @@ Proceed with caution!
 After logging into your Raspberry Pi and cloning this repository, do the following from the command line:
 
 % cd RPiAdHocWiFi <br>
+% sudo ./prepare.sh <br>
 % sudo ./install.sh <br>
-% sudo reboot <br>
+% sudo ./uninstall.sh <br>
 
 ##  Connecting to your ad-hoc network from another Raspberry Pi
 If you have more than one Raspberry Pi, you can use one to serve up the ad-hoc network as shown above,
