@@ -12,6 +12,7 @@ iwconfig wlan0 essid nslrpinet  # Change Raspberry-Pi-1 to whatever name you lik
 iwconfig wlan0 key 6e736c72706940313233343536
 sleep 1
 ifconfig wlan0 192.168.2.1           # This should agree with the IP address in udhcpd.conf
+iwconfig wlan0 txpower 0
 ifconfig wlan0 up
 udhcpd /etc/udhcpd.conf
 
